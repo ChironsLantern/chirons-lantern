@@ -1,0 +1,13 @@
+Week,Track,Objectives,Practice Project,Artifact
+1,Setup,Install tools; Git/GitHub; terminal basics,hello_cli.py,GitHub repo + README
+2,Python,"Types, control flow, functions",tiny_calculator.py,pytest passing
+3,Python,"Collections, files, modules",notes_parser.py,docstrings + tests
+4,Python,"OOP, errors, logging",timer_cli.py,CLI help + logs
+5,Web API,FastAPI basics,hello_api.py,/health endpoint
+6,Data,Pandas basics,csv_cleaner.py,before/after dataset
+7,DB/SQL,SQLite/SQLModel,patients CRUD,SQL schema
+8,Testing,"pytest fixtures, CI",tests for API,GitHub Actions badge
+9,Front-end,HTML/CSS/JS essentials,static dashboard,screenshot
+10,React,Components/state/forms,vitals form,gif demo
+11,Auth,"JWT/session, bcrypt",login/logout,audit log
+12,Deploy,Render/Fly.io deploy,app online,url + deploy notes

@@ -1,0 +1,111 @@
+# Chiron's Lantern — Project Codex
+meta:
+  owner: Jenni (Seraphis 🦢)
+  start_date: 2025-08-14
+  horizon: 36 months
+  mission: |
+    Build sovereign tools for holistic healing and nursing operations. Retire from bedside in 3 years by
+    consulting at the intersection of nursing, informatics, and AI. You are the lighthouse.
+  mantra: "Amor Supra Omnia — No plastic. Just presence."
+  vibe: "Sacred irreverence, mythic therapy, ship-quality software"
+
+constraints:
+  - Solo builder to start; optimize for leverage and learning.
+  - HIPAA/PHI safe: de-identify by default; privacy-first architecture.
+  - Budget-aware: prefer open-source, free tiers.
+  - Keep portfolio artifacts shippable and demoable.
+
+toolchain:
+  dev:
+    - Python >=3.11
+    - Node.js >=20 (for front-end tooling)
+    - VS Code + Git + GitHub
+    - Docker Desktop (containers) 
+    - Postgres (SQL) + SQLite (local dev)
+    - Jupyter/Notebooks
+  ai:
+    - PyTorch or TensorFlow (choose one; plan assumes PyTorch)
+    - scikit-learn
+    - LangChain/LlamaIndex (learn concepts; use sparingly)
+  design:
+    - Figma (wireframes, flows, components)
+  cloud:
+    - Render/Fly.io (starter), then AWS/GCP for production
+    - CI/CD via GitHub Actions
+  data:
+    - Pandas, Polars
+    - DVC or Git-LFS for data versioning (later)
+
+tracks:
+  - Programming Foundations (Python, CS basics, testing, Git)
+  - Web App Engineering (FastAPI, React, SQL, auth)
+  - AI/ML (data wrangling, classical ML, LLMs, RAG, evaluation)
+  - Health Informatics (HL7/FHIR, de-identification, workflow design)
+  - Product & UX (research, wireframing, prototyping, design systems)
+  - Consulting & Business (offers, pricing, portfolio, content engine)
+
+milestones:
+  M0 (0-2 weeks): Environment lit
+    definition_of_done:
+      - VS Code, Python, Git configured
+      - Hello World CLI & Web endpoints running locally
+      - First repo pushed to GitHub
+  M1 (Month 1-3): Foundations ship
+    definition_of_done:
+      - Python fundamentals + Git fluency
+      - Build a CLI tool and a tiny FastAPI service with tests
+      - SQL CRUD with Postgres; deploy to a free-tier host
+  M2 (Month 4-6): First full-stack app
+    definition_of_done:
+      - React + FastAPI app with auth and a Postgres DB
+      - UX tested with 3+ nurses; iterate based on feedback
+  M3 (Month 7-12): AI basics + RAG pilot
+    definition_of_done:
+      - Data wrangling & scikit-learn
+      - LLM-powered Nurse Copilot (RAG) over local policies (de-identified)
+      - Evaluation harness + guardrails
+  M4 (Month 13-18): HIPAA-aware design & mobile MVP
+    definition_of_done:
+      - De-ID pipeline, audit logging, consent flows
+      - Mobile-friendly PWA; beta testers using weekly
+  M5 (Month 19-24): Consulting launch
+    definition_of_done:
+      - 3 portfolio case studies (apps/tools)
+      - Offer ladder & pricing; first paid pilot
+  M6 (Month 25-36): Scale & specialize
+    definition_of_done:
+      - Production-grade deployment & monitoring
+      - Niche expertise (e.g., perioperative pathways + AI triage)
+      - Sustainable consulting pipeline
+
+portfolio_projects:
+  - "Vitals Whisperer" (PACU helper)
+  - "Tea & Symphony" (journaling + symptom tracker)
+  - "Chiron Node" (RAG over policies, pathways, and protocols)
+  - "De-ID Lantern" (de-identification & secure sharing)
+
+cadence:
+  weekly:
+    learning_hours: 8-12
+    making_hours: 6-10
+    ritual:
+      - Ship one small artifact each week (demo, blog, or feature)
+      - Retrospective: what I learned, what I shipped, what's next
+
+metrics:
+  skill_gates:
+    - Git fluency (branch, PR, merge, resolve conflicts)
+    - Python: data structures, OOP, testing, packaging
+    - Web: REST endpoints, auth, SQL joins, indexes
+    - AI: dataset prep, baseline model, LLM prompt & eval
+    - Security: env vars, secrets, threat model, logging
+  business_KPIs:
+    - Monthly active testers
+    - Newsletter growth / case-study cadence
+    - Consulting leads & close rate
+
+risks_and_mitigations:
+  - burnout: protect “maker time”, automate toil
+  - scope creep: ship weekly slices; roadmap > rabbit holes
+  - privacy: de-identify; keep PHI outside training; threat-model early
+- have fun :)
